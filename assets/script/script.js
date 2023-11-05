@@ -10,6 +10,10 @@ function adicionarTarefa(){
 		alert('Esta tarefa já está na lista!');
 		tarefa.value="";
 	}
+//CASO NÃO SEJA INFORMADA UMA TAREFA, NÃO ADICIONA NADA E INFORMA UM ERRO
+	else if(tarefa.value==''){
+		alert("Por Favor informe uma tarefa")
+	}
 //CASO NÃO TENHA A TAREFA, ADICIONE TAREFA
 	else{
 //adição da tarefa e exibição da mesma no console
